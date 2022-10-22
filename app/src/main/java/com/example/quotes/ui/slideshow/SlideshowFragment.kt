@@ -20,8 +20,7 @@ class SlideshowFragment : Fragment() {
 
     private var _binding: FragmentSlideshowBinding? = null
     private val slideshowViewModel: SlideshowViewModel by viewModels()
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+
     private val binding get() = _binding!!
 
     override fun onCreateView(

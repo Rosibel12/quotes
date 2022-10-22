@@ -13,6 +13,7 @@ import androidx.lifecycle.lifecycleScope
 import com.example.quotes.databinding.FragmentHomeBinding
 import com.example.quotes.domain.UserPreferencesRepository
 import com.example.quotes.domain.model.QuoteModel
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

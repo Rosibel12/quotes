@@ -1,15 +1,13 @@
-package com.example.quotes.ui.home
+package com.example.quotes.ui.list
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import dagger.hilt.android.AndroidEntryPoint
 
-
-class HomeViewModel : ViewModel() {
+class ListViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "rosi"
+        value = "MOSTRAR LISTA"
     }
     val text: LiveData<String> = _text
 }

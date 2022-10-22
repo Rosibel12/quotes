@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.quotes.domain.model.QuoteModel
 import com.example.quotes.domain.usecase.GetQuoteRandomUseCase
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.first
@@ -13,7 +14,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 
-@dagger.hilt.android.lifecycle.HiltViewModel
+@HiltViewModel
 class SlideshowViewModel
 @Inject constructor(private val getQuoteRandomUseCase: GetQuoteRandomUseCase
 ): ViewModel() {
